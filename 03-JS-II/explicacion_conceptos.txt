@@ -1,0 +1,11 @@
+Explicación de conceptos
+
+Ciclo for: es un bloque de código contenido que nos permite ejecutar varias veces el mismo código con ligeras variaciones que van paso a paso, estas variaciones van
+marcadas por una variable que definimos como contador, el ciclo se repetirá hasta que lleguemos a un punto donde se cumpla un criterio definido al iniciar.
+Se pueden incluir ciclos dentro de ciclos, al hacerlo hay que considerar que cada ciclo tiene una variable, criterio y paso que puede ser independiente.
+
+Operadores lógicos &&, || y !: estos son operadores para variables booleanas, se pueden interpretar como multiplicación, suma y negación.
+Si interpretamos el valor true como 1, y el valor false como 0, el resultado de && sería 1 x 1 = 1, 1 x 0 = 0, 0 x 1 = 0 y 0 x 0 = 0, una multiplicación sencilla.
+Igual para el operador ||, sería 1 + 1 = 1, 1 + 0 = 1, 0 + 1 = 1 y 0 + 0 = 0.
+La negación es el más simple, solo invierte el valor entregado, !1 = 0 y !0 = 1.
+También se puede usar negación varias veces, así: !!0 -> !1 -> 0.
