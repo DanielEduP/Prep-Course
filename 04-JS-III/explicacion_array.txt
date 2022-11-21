@@ -1,0 +1,4 @@
+Un array es una agrupación de datos, un conjunto, es fácil visualizarlo como una lista de datos. Estos datos son variables, entonces pueden ser cualquier cosa que
+una variable pueda guardar, incluso otros arrays. Los datos dentro de un array estan organizados de una forma consecutiva, uno tras otro, cada uno tiene una posición
+cuya nomenclatura son números enteros, arrancando con la primer posición correspondiente a la nomenclatura, o indice, cero (0).
+Así podemos acceder a un dato especifico conociendo su posición dentro del array.
