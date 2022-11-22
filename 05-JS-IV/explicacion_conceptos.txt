@@ -1,0 +1,29 @@
+Objetos:
+Un objeto es una representación de algo, todo es un objeto y un objeto puede ser cualquier cosa que queramos, los representamos como una lista de caracteristicas y 
+valores para esas caracteristicas, por ejemplo, color : "azul", tamaño : "grande", cuantos_dados_tiene : 2... esas caracteristicas también pueden ser acciones,
+tirar_dados : tira la cantidad de dados que tenga y te informa el resultado.
+
+Propiedades:
+Los objetos los declaramos así, caracteristica : valor, las caracteristicas y sus valores son las propiedades de un objeto, las conocemos por el nombre de key y value,
+a un objeto podemos agregarle o quitarle propiedades, asi como cambiar o quitar su valor correspondiente, un objeto no puede tener dos propiedades con el mismo nombre,
+sería como decir tamaño : "grande" y a la vez tamaño : "pequeño".
+
+Métodos:
+Los metodos son las "acciones" que puede realizar nuestro objeto, pueden ser cualquier cosa y referenciar al mismo objeto o a otro diferente, asi como en el ejemplo
+inicial, el objeto tira los dados que tiene y nos dice cuanto sacan, también podemos tener un objeto que mira cuantos dados tiene otro objeto y quitarle si tiene más
+dados que los que debería.
+
+Bucle for ... in:
+como el bucle for avanza paso a paso por una lista, sabiendo que los componentes de la lista se reconocen por un número entero, empezando en 0 y aumentando de a 1,
+0, 1, 2... es fácil ver como podriamos ir paso a paso, un objeto tiene componentes que no tienen un orden lógico o relacional entre ellos, color, tamaño, peso...
+son caracteristicas que no es posible encadenar paso a paso, sin embargo podemos tener casos en que necesitemos recorrerlos, para esto usamos el bucle for ... in,
+este bucle recorrerá todas las caracteristicas del objeto de forma secuencial, permitiendonos acceder a todas ellas.
+
+Notación de puntos vs notación de corchetes:
+son formas muy similares de como podemos acceder a las caracteristicas de los objetos, cuando usamos un metodo lo hacemos así: objeto.metodo()
+esto es equivalente a decir objeto["metodo"]()
+La diferencia radica en que usando el metodo de punto, lo que esta después del punto es literal, es exactamente lo que este escrito allí, no necesariamente lo que 
+queremos representar, me explico, digamos nuestro metodo se llama hacerHacks, y yo creo una variable asi variable = "hacerHacks".
+si luego trato de usarlo así: objeto.variable(), no me va a funcionar, porque es como si tuviese objeto."hacerHacks"(), donde debería ser objeto.hacerHacks()
+sin embargo, al usar la notación de corchetes cuadrados si funcionaría, debido a que metodo[variable](), sería lo mismo a metodo["hacerHacks"](), que es la forma
+valida de llamar el método.
