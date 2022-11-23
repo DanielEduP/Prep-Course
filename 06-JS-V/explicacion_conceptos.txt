@@ -1,0 +1,12 @@
+prototype:
+Los prototype son el punto en común donde provienen las clases, es en donde encuentran su estructura, de argumentos y metodos, y va creciendo en orden gerarquico,
+Si algo afecta un prototype, afectará todas las clases que se conectan a él, de forma decendente, si tenemos una estructura simple así:
+protipo 1 > prototipo 2 > prototipo 3, al agregar un metodo al prototipo 2, las clases del prototipo 3 podrán accederlo, pero no las clases del prototipo 1.
+Gracias a esto nos permite ahorrar recursos al establecer metodos, pues solo tenemos que implementarlos en prototipos para permitir que multiples clases tengan
+acceso.
+
+Constructors (de clase):
+los constructores son un tipo de funcion especial, que permiten crear un arquetipo de objeto, un arquetipo es un "molde" de algo, al crear estos arquetipos podemos
+definir unos argumentos base que haran parte de un objeto, eso es muy flexible, pues se puede estructurar de tal forma que si no se pasan todos los argumentos posibles
+al crear el objeto, los faltantes tomen un valor por defecto.
+Tambien se pueden definir metodos en un constructor, o se pueden implementar luego en su prototipo.
