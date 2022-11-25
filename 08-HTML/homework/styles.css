@@ -1,0 +1,48 @@
+#thirdDiv {
+    width:700;
+    height:900;
+    background-color: rgb(185, 185, 185);
+    padding: 50px;
+    border: 5px;
+    border-style: double;
+    border-color: rgb(85, 85, 85);   
+    
+}
+#spanId {   
+    font-size: 18px;
+    padding-top: 0px;
+    margin: 25px;
+    display:inline-block
+}
+body{
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148833155.jpg?w=2000");
+    background-blend-mode: color-dodge;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.imgClass{
+    width: 500px;
+    margin: 2px auto;
+    padding: 5px;
+    border: solid rgb(60, 60, 70) 11px;
+}
+.divClass{
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.ulClass{
+    list-style-type: square;
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
