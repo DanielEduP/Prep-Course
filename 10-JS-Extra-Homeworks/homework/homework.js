@@ -10,7 +10,17 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
-}
+    this.objeto = objeto;
+    var answer = [];
+    var minimatrix = [];
+  
+    for(var x in objeto){
+      minimatrix = [x, objeto[x]];
+      answer.push(minimatrix);
+      minimatrix = [];
+    }
+    return answer;
+  }
 
 
 function numberOfCharacters(string) {
@@ -18,6 +28,18 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var answer = {};
+
+//
+for (let i = 0; i < string.length; i++) {
+  if (!(string[i] in answer)){
+    answer[string[i]] = 1;
+  } else {
+    answer[string[i]] = answer[string[i]] + 1;
+  }
+}
+return answer;
+
 }
 
 
@@ -26,15 +48,41 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var upc = "";
+  var lowc = "";
+
+  for (let i = 0; i < s.length; i++) {
+    if(s[i] === (s[i].toUpperCase())){
+      upc = upc + s[i];
+      
+    } else {
+      lowc = lowc + s[i];
+    }
+  }
+  s = upc + lowc;
+  return s;
 }
 
 
 function asAmirror(str) {
   //La función recibe una frase. 
-  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
+  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer
+  //de izquierda a derecha 
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  var splited = str.split(" ");
+  var answer = "";
+
+  for(var word in splited){
+    for(var letter = splited[word].length - 1; letter >= 0; letter--){
+      answer = answer + splited[word][letter];
+    }
+    answer = answer + " ";
+  }
+
+  answer = answer.slice(0,-1);
+  return str = answer;
 } 
 
 
@@ -43,6 +91,13 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var capicuo = numero.toString();
+  for (var i = 0; i < capicuo.length/2; i++){
+    if (capicuo[i] !== capicuo.split("").reverse().join("")[i]){
+      return "No es capicua";
+    }
+  }
+  return "Es capicua";
 }
 
 
@@ -50,13 +105,27 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var cadena = cadena.toString().split("");
+  var a_borrar = "abc".split("");
+  var answer = "";
+
+  cadena.forEach(letra => {
+    if (!(a_borrar.includes(letra))){
+      answer = answer + letra;
+    }
+  });
+  return cadena = answer;
 }
 
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
-  //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
+  //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve --->
+  //[“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  return arr.sort(function(a, b){
+    return (a.length.toString()).localeCompare(b.length.toString());
+    })
 }
 
 
@@ -66,6 +135,21 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  var arr = arreglo1;
+  var arr2 = arreglo2;
+  var answer = [];
+
+  if(arreglo2.length < arreglo1.length){
+    arr = arreglo2;
+    arr2 = arreglo1;
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr2.includes(arr[i])){
+      answer.push(arr[i]);
+    }
+  }
+  return answer;
 }
 
 
