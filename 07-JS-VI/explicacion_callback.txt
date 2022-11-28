@@ -1,0 +1,6 @@
+Callback: Ocurre un callback cuando usamos una función como argumento en otra función. Las funciones pueden ser independientes o de metodos de clases,
+se deben tener todas las consideraciones como cuando se trabaja con una función con argumentos sencillos.
+Digamos que necesitamos calcular el volumen de un cuerpo geométrico regular, un cilindro por ejemplo, podemos contruir una función que calcule el área y luego
+la múltiplique por la altura para hallar el volumen, es válido, si quisieramos usar un callback, podríamos usar una función ya existente para cálcular el área
+del círculo y luego multiplicar por la altura, vamos a obtener el mismo resultado; La diferencia la notaremos fácilmente cuando la función a hacerle el callback
+es una función compleja, pues nos ahorrariamos tenerla en distintos lugares innecesariamente.

@@ -1,0 +1,23 @@
+Conceptos a explicar:
+
+Variables: las variables son como cajas donde podemos guardar información de diferente tipo, pueden ser números, cadenas de texto, valores booleanos lógicos,
+estos valores pueden re asignarse y la variable cambiar su contenido sin cambiar su nombre, podemos operar la variable como el valor que tiene contenido.
+
+Strings: son cadenas de texto, se diferencian porque estan entre comillas dobles o simples, mientras algo se encuentre entre comillas se toma como una cadena de
+texto, independiente de que sea lo que esté escrito, por ejemplo "1", no se interpreta como el número 1, si no como una cadena de texto que contiene un 1.
+
+Funciones(argumentos, return): una función es un bloque de código que hemos encapsulado y nombrado, contiene instrucciones de "algo" que queramos hacer, se pueden
+invocar o llamar en multiples ocaciones, cada vez que las llamamos por su nombre ejecutan el código que encapsulamos, es común que las funciones requieran información
+para funcionar, esta información se la podemos proveer a la función en forma de argumentos, estos argumentos son variables que entrar a la función cuando la invocamos,
+por ejemplo invocarFuncion(argumento1, argumento2), los argumentos pueden ser de cualquier tipo. También es común que las funciones devuelvan una respuesta, esta
+respuesta se puede entregar con la palabra return, cuando la función llega a la palabra return, regresa lo que esta allí y termina su ejecución, si hay algo más 
+después del return, no se ejecutará.
+
+Declaraciones IF: la palabra IF significa Sí condicional, es decir, Sí esto es cierto, Entonces has esto. Se usa para comparar variables con algún criterio,
+tomar una decisión en particular y ejecutar un bloque de código o no ejecutarlo y pasar a siguiente. Se puede visualizar el código como un camino lineal, y cada vez
+que llega a un IF, es como si llegara a una puerta, si la condición se cumple entra a la puerta, si no se cumple, ignora todo lo que esta dentro de la puerta y 
+continua su camino.
+
+Valores booleanos: son valores binarios, quiere decir que solamente pueden tomar 2 formas, 1 ó 0, verdadero ó falso, o en JS, toman las palabras reservadas de
+true ó false, se usan para definir comportamientos lógicos, como por ejemplo las condiciones en declaraciones IF, si el valor es verdadero ejecuta las instrucciones
+dentro de la declaración IF, si es falso no las ejecute.

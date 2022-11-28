@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+  }
+.Estructura{
+    max-width: 800px;
+    margin: auto;
+    font-family:'Arial Narrow';
+    color: rgb(56, 56, 56);
+}
+.imageContainer{
+    float: left;
+    width: 30%;
+    padding: 5px;
+    padding-left: 20px;
+}
+.imageClass{
+    float: left;
+    width: 78%;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.Encabezado {
+    font-size: large;
+}
+.Cons {
+    font-size: medium;
+}
+.Nav{
+    float: left;
+    width: 25%;
+    margin-left: 1px;
+}
+.Desc{
+    float: right;
+    width: 70%;
+    border-left-color: rgb(56, 56, 56);
+    border-left-style:double;
+    padding-left: 4px;
+}
+.bigLine {
+    border: 2px solid rgb(56, 56, 56);
+    border-radius: 2px;
+  }
+.smallLine{
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 2px;
+}
+.brB{
+    display: block;
+    content: "";
+    margin-top: 5px;
+}
+br{
+    display: block;
+    content: "";
+    margin-top: 2px;
+}
+.ulClass{
+    list-style-type: square;
+}
